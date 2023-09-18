@@ -9,7 +9,7 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-Challenges: I had a hard time using the strsplit() command and still am having trouble calling characters out of my character vector.
+Challenges: I had a hard time using the strsplit() command and still am having trouble calling characters out of my character vector. By using ?strsplit() I was able to obtain some help with the command and better understand the ways in which to best apply it.
 
 I also had a lot of trouble with working direcotries and making my working directory a place that is unique to my current repo.
 
@@ -90,11 +90,12 @@ Primates <- c("Haplorini", "Strepsirhini")
 Primates <- list(Haplorhini, Strepsirhini)
 names(Primates) <- list("Haplorhini", "Strepsirhini")
 ```
+
+## CHALLENGE 5
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
 m3 <- matrix(data = "3, 0, 1, 23, 1, 2, 33, 1, 1, 42, 0, 1, 41, 0, 2", nrow = 5, ncol = 3, byrow = FALSE)
-#5x3 matrix row wise
 df <- m3
-#Made matrix into a data frame
-is.logical(df[,2])
-#makes the column logical
-is.factor(df[,3])
-#makes column factor-valued
+df <- is.logical(df[,2])
+df <- is.factor(df[,3])
+```
