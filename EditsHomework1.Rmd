@@ -30,6 +30,7 @@ v1[seq(from = 1, to = 22, by = 3)]
 ## CHALLENGE 2
 ```{r challenge 2, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+m <- matrix(data = 1:80, nrow = 8, ncol = 10, byrow = FALSE)
 a<-m[, 2]
 b<-m[,3]
 c<-m[,6]
@@ -96,7 +97,7 @@ names(Primates) <- list("Haplorhini", "Strepsirhini")
 ```{r challenge 5, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 m3 <- matrix(data = "3, 0, 1, 23, 1, 2, 33, 1, 1, 42, 0, 1, 41, 0, 2", nrow = 5, ncol = 3, byrow = FALSE)
-df <- m3
-df <- is.logical(df[,2])
+data <- data.frame(m3)
+data [, 2] <- as.logical(data[, 2])
 df <- is.factor(df[,3])
 ```
