@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # I also had a lot of trouble with working directories and making my working directory a place that is unique to my current repo. Through arduous trial and error and an embarrassing number of YouTube videos I was able to identify my problem and now hold a better understanding for file saving and re-accessing repos.
 
-# Finally, I struggled with changing df to logical and factor values, and still could use some help with that code.
+# Finally, I struggled with changing the matrix into a data frame. I also had a hard time with changing columns to logical and factor values, however, I once again used the ? command to read more about the command I was using, as well as learned from my peers and how they coerced their data frames.
 
 ## CHALLENGE 1
 ```{r challenge 1, include=FALSE}
