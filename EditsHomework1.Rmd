@@ -50,10 +50,12 @@ x<-c(g:h)
 ```
 
 ## I used the same method as before, but this time included : to signify I was including all characters from m[2,2] up to and including m[6,9]
-pick <- z[seq(from = 3, to = 22, by = 3)]
-#not sure why this isn't working
+
+## CHALLENGE 3
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
 a <- array(data = 1:400, dim = c(5, 5, 4, 4))
-#creating the initial array. 
 a[1, 1, 1, 2]
 #[1] 101
 a[2, 3, 2, ]
@@ -65,6 +67,12 @@ a[1:5, 1:5, 3, 3]
 # [3,]  253  258  263  268  273
 # [4,]  254  259  264  269  274
 # [5,]  255  260  265  270  275
+```
+## Here I created the array and used brackets to call different data and rows out.
+
+## CHALLENGE 4
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
 Lemuroidea <- c("Cheirogaleidae", "Lepilemuridae", "Indriidae", "Lemuridae",
     "Daubentoniidae")
 Lorisoidea <- c("Lorisidae", "Galagidae")
@@ -81,7 +89,7 @@ names(Haplorhini) <- list("Anthropoidea")
 Primates <- c("Haplorini", "Strepsirhini")
 Primates <- list(Haplorhini, Strepsirhini)
 names(Primates) <- list("Haplorhini", "Strepsirhini")
-#WORKSHOP THIS--creates correct phylogency but repeats too many names
+```
 m3 <- matrix(data = "3, 0, 1, 23, 1, 2, 33, 1, 1, 42, 0, 1, 41, 0, 2", nrow = 5, ncol = 3, byrow = FALSE)
 #5x3 matrix row wise
 df <- m3
