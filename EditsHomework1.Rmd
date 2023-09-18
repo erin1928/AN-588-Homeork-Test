@@ -21,7 +21,7 @@ Finally, I struggled with changing df to logical and factor values, and still co
 knitr::opts_chunk$set(echo = TRUE)
 
 v1<-("Stately, plump Buck Mulligan came from the stairhead, bearing a bowl of lather on which a mirror and a razor lay crossed.")
-v1 <- strsplit(v1, split = " ")
+strsplit(v1, split = " ", fixed = FALSE, perl = FALSE, useBytes = FALSE)
 v1[seq(from = 1, to = 22, by = 3)]
 
 ```
