@@ -3,7 +3,7 @@ title: "Final Homework"
 author: "Erin Anderson"
 date: "`r Sys.Date()`"
 output: html_document
-
+theme: hpstr
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
