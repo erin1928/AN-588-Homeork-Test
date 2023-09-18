@@ -94,6 +94,8 @@ Primates <- list(Haplorhini, Strepsirhini)
 names(Primates) <- list("Haplorhini", "Strepsirhini")
 ```
 
+#Challenge 4 was my favorite. I feel like nesting characters within lists was easy to understand. I copied the same method for every nest, first assigning catergories with their families, and then nesting the assigned catergories into overarching orders.
+
 ## CHALLENGE 5
 ```{r challenge 5, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
