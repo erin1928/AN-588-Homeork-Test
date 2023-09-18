@@ -15,6 +15,7 @@ I also had a lot of trouble with working direcotries and making my working direc
 
 Finally, I struggled with changing df to logical and factor values, and still could use some help with that code.
 
+## CHALLENGE 1
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
@@ -23,7 +24,9 @@ v1 <- strsplit(v1, split = " ")
 v1[seq(from = 1, to = 22, by = 3)]
 
 ```
-## extracts every third characters from character vector
+## I created the character vector v1 to comprise of the given text. I think used the strsplit() function to split each character within the string. Finally I sequenced my characters by 3.
+
+## CHALLENGE 2
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 a<-m[, 2]
@@ -68,17 +71,13 @@ Lorisoidea <- c("Lorisidae", "Galagidae")
 Strepsirhini <- list(Lemuroidea, Lorisoidea)
 names(Strepsirhini) <- list("Lemuroidea", "Lorisoidea")
 Strepsirhini
-#creates Strepsirhini branch
 Tarsioidea <- c("Tarsiidae")
 Catarrhini <- c("Cercopithecidae", "Hylobatidae", "Hominidae")
 Platyrrhini <- c("Cebidae", "Atelidae", "Pitheciidae")
 Anthropoidea <- list(Tarsioidea, Catarrhini, Platyrrhini)
 names(Anthropoidea) <- list("Tarsioidea", "Catarrhini", "Platyrrhini")
-#Creates Anthropoidea branch
 Haplorhini <- list(Anthropoidea)
-#Creates sublist of Anthropoidea
 names(Haplorhini) <- list("Anthropoidea")
-#WORKSHOP THIS--creates correct list name but adds Anthropoidea to all subsections of the list
 Primates <- c("Haplorini", "Strepsirhini")
 Primates <- list(Haplorhini, Strepsirhini)
 names(Primates) <- list("Haplorhini", "Strepsirhini")
