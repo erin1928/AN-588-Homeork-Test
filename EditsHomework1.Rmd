@@ -99,5 +99,5 @@ knitr::opts_chunk$set(echo = TRUE)
 m3 <- matrix(data = "3, 0, 1, 23, 1, 2, 33, 1, 1, 42, 0, 1, 41, 0, 2", nrow = 5, ncol = 3, byrow = FALSE)
 data <- data.frame(m3)
 data [, 2] <- as.logical(data[, 2])
-df <- is.factor(df[,3])
+data [, 3] <- as.factor(data[, 3])
 ```
