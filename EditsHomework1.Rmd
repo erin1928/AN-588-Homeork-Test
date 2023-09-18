@@ -9,9 +9,11 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-Challenges: I had a hard time using the strsplit() command and still am having trouble calling characters out of my character vector. By using ?strsplit() I was able to obtain some help with the command and better understand the ways in which to best apply it.
+Challenges: 
 
-I also had a lot of trouble with working direcotries and making my working directory a place that is unique to my current repo.
+I had a hard time using the strsplit() command and still am having trouble calling characters out of my character vector. By using ?strsplit() I was able to obtain some help with the command and better understand the ways in which to best apply it.
+
+I also had a lot of trouble with working directories and making my working directory a place that is unique to my current repo. Through arduous trial and error and an embarrassing number of YouTube videos I was able to identify my problem and now hold a better understanding for file saving and re-accessing repos.
 
 Finally, I struggled with changing df to logical and factor values, and still could use some help with that code.
 
