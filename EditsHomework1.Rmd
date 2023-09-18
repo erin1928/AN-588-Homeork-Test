@@ -19,28 +19,34 @@ Finally, I struggled with changing df to logical and factor values, and still co
 knitr::opts_chunk$set(echo = TRUE)
 
 v1<-("Stately, plump Buck Mulligan came from the stairhead, bearing a bowl of lather on which a mirror and a razor lay crossed.")
-strsplit(v1, split = " ")
-```
+v1 <- strsplit(v1, split = " ")
+v1[seq(from = 1, to = 22, by = 3)]
 
-this creates a continuous string and splits each character.
-v[c(3, 6, 9, 12, 15)]
-#extracts every third characters from character vector
-## Including Plots
+```
+## extracts every third characters from character vector
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
 a<-m[, 2]
 b<-m[,3]
 c<-m[,6]
 x<-c(a, b, c)
-#I assigned each column to a variable, "a", "b", or "c" and then assigned x as a character vector comprising of a, b, and c
+```
+## I assigned each column to a variable, "a", "b", or "c" and then assigned x as a character vector comprising of a, b, and c
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
 d<-m[6,]
 e<-m[8,]
 x<-c(d, e)
-#I used the same method as before to assign rows to individual characters, and then used a character vector to assign both rows to variable x.
+```
+## I used the same method as before to assign rows to individual characters, and then used a character vector to assign both rows to variable x.
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
 g<-m[2,2]
 h<-m[6,9]
 x<-c(g:h)
-#I used the same method as before, but this time included : to signify I was including all characters from m[2,2] up to and including m[6,9]
-z <- strsplit(v1, " ")
-#using string split
+```
+
+## I used the same method as before, but this time included : to signify I was including all characters from m[2,2] up to and including m[6,9]
 pick <- z[seq(from = 3, to = 22, by = 3)]
 #not sure why this isn't working
 a <- array(data = 1:400, dim = c(5, 5, 4, 4))
