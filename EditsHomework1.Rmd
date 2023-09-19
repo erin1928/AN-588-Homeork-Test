@@ -17,6 +17,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Finally, I struggled with changing the matrix into a data frame. I also had a hard time with changing columns to logical and factor values, however, I once again used the ? command to read more about the command I was using, as well as learned from my peers and how they coerced their data frames.
 
+# I incoroprated my peers comments by adding chunks into my document (thank you Reese!) and fixing my matrices as they noted some bugs I missed. I also was able to better understand dataframes and organization through their feedback.
+
 ## CHALLENGE 1
 ```{r challenge 1, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
