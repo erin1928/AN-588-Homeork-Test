@@ -22,22 +22,26 @@ strsplit(v1, split = " ")
 #this splits each character 
 v[c(3, 6, 9, 12, 15)]
 #extracts every third characters from character vector
-Reese Comment: Hi Erin I really liked how simple you made it to extract every third element. However, I was wondering if you could find a way to create a vector containing only the string that is continous(like v1) and then finding a way to split it like how it is in v? You might be able to do this using str_split where the value is " " because it takes all the spaces and puts another in between them. 
+##reesehs: Hi Erin I really liked how simple you made it to extract every third element. However, I was wondering if you could find a way to create a vector containing only the string that is continous(like v1) and then finding a way to split it like how it is in v? You might be able to do this using str_split where the value is " " because it takes all the spaces and puts another in between them. 
 --Also, something that might be helpful for you in order to run code much easier rather than having to copy and paste into the consol is to create chunks! I just looked up a keyboard shortcut online and it's been really helpful in making coding easier and kniting much more pretty!
 
 ## Including Plots
-a<-m[, 2] //reesehs: I'm not sure if it was something weird with the original Rmd file but for some reason there is no matrix here! It seems like you have a really good grasp on how to manipulate them so you might just want to add the matrix back in!
+a<-m[, 2] 
+##reesehs: I'm not sure if it was something weird with the original Rmd file but for some reason there is no matrix here! It seems like you have a really good grasp on how to manipulate them so you might just want to add the matrix back in!
 b<-m[,3]
 c<-m[,6]
-x<-c(a, b, c) //reesehs: You might, for efficiency sake, just make a vector that(instead of containing a, b, c) just make it a vector from the matrix and then list 2, 3, 6, which does the same thing. But I think that in more high level question in the future assigning the variables can be helpful in organizing data. You also totally don't have to do this since you good is totally fine!!
+x<-c(a, b, c) 
+##reesehs: You might, for efficiency sake, just make a vector that(instead of containing a, b, c) just make it a vector from the matrix and then list 2, 3, 6, which does the same thing. But I think that in more high level question in the future assigning the variables can be helpful in organizing data. You also totally don't have to do this since you good is totally fine!!
 #I assigned each column to a variable, "a", "b", or "c" and then assigned x as a character vector comprising of a, b, and c
 d<-m[6,]
 e<-m[8,]
-x<-c(d, e) //reesehs: Looks great!
+x<-c(d, e) 
+##reesehs: Looks great!
 #I used the same method as before to assign rows to individual characters, and then used a character vector to assign both rows to variable x.
 g<-m[2,2]
 h<-m[6,9]
-x<-c(g:h). //reesehs: so smart!! I wonder(and I might experiement with this later) if you could just assign x to a vector with in the matrix with 2,2 and 6,9 as the ends of : symbol?
+x<-c(g:h). 
+##reesehs: so smart!! I wonder(and I might experiement with this later) if you could just assign x to a vector with in the matrix with 2,2 and 6,9 as the ends of : symbol?
 #I used the same method as before, but this time included : to signify I was including all characters from m[2,2] up to and including m[6,9]
 z <- strsplit(v1, " ")
 #using string split
@@ -55,7 +59,8 @@ a[1:5, 1:5, 3, 3]
 # [2,]  252  257  262  267  272
 # [3,]  253  258  263  268  273
 # [4,]  254  259  264  269  274
-# [5,]  255  260  265  270  275 //NGL I wrote out in words what it returned, but I definitely liked that you just copied what the console spat out, a way more effective explaination!
+# [5,]  255  260  265  270  275 
+##NGL I wrote out in words what it returned, but I definitely liked that you just copied what the console spat out, a way more effective explaination!
 Lemuroidea <- c("Cheirogaleidae", "Lepilemuridae", "Indriidae", "Lemuridae",
     "Daubentoniidae")
 Lorisoidea <- c("Lorisidae", "Galagidae")
