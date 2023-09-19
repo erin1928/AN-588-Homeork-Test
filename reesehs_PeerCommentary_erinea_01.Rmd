@@ -1,0 +1,88 @@
+---
+title: "reesehs_PeerCommentary_erinea_01."
+author: "Reese Hotten-Somers"
+date: "2023-09-19"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+Challenges: I had a hard time using the strsplit() command and still am having trouble calling characters out of my character vector.
+
+I also had a lot of trouble with working direcotries and making my working directory a place that is unique to my current repo.
+
+Finally, I struggled with changing df to logical and factor values, and still could use some help with that code.
+
+v<-c("Stately,", "plump", "Buck", "Mulligan", "came", "from", "the", "stairhead", "bearing", "a", "bowl", "of", "lather", "on", "which", "a", "mirror", "and", "a", "razor", "lay", "crossed.")
+#this assigns character vector
+v1<-("Stately, plump Buck Mulligan came from the stairhead, bearing a bowl of lather on which a mirror and a razor lay crossed.")
+#this creates a continuous string
+strsplit(v1, split = " ")
+#this splits each character 
+v[c(3, 6, 9, 12, 15)]
+
+Reese Comment: Hi Erin I really liked how simple you made it to extract every third element. However, I was wondering if you could find a way to create a vector containing only the string that is continous(like v1) and then finding a way to split it like how it is in v? You might be able to do this using str_split where the value is " " because it takes all the spaces and puts another in between them. 
+--Also, something that might be helpful for you in order to run code much easier rather than having to copy and paste into the consol is to create chunks! I just looked up a keyboard shortcut online and it's been really helpful in making coding easier and kniting much more pretty!
+
+#extracts every third characters from character vector
+## Including Plots
+a<-m[, 2]
+b<-m[,3]
+c<-m[,6]
+x<-c(a, b, c)
+#I assigned each column to a variable, "a", "b", or "c" and then assigned x as a character vector comprising of a, b, and c
+d<-m[6,]
+e<-m[8,]
+x<-c(d, e)
+#I used the same method as before to assign rows to individual characters, and then used a character vector to assign both rows to variable x.
+g<-m[2,2]
+h<-m[6,9]
+x<-c(g:h)
+#I used the same method as before, but this time included : to signify I was including all characters from m[2,2] up to and including m[6,9]
+z <- strsplit(v1, " ")
+#using string split
+pick <- z[seq(from = 3, to = 22, by = 3)]
+#not sure why this isn't working
+a <- array(data = 1:400, dim = c(5, 5, 4, 4))
+#creating the initial array. 
+a[1, 1, 1, 2]
+#[1] 101
+a[2, 3, 2, ]
+#[1]  37 137 237 337
+a[1:5, 1:5, 3, 3]
+# [,1] [,2] [,3] [,4] [,5]
+# [1,]  251  256  261  266  271
+# [2,]  252  257  262  267  272
+# [3,]  253  258  263  268  273
+# [4,]  254  259  264  269  274
+# [5,]  255  260  265  270  275
+Lemuroidea <- c("Cheirogaleidae", "Lepilemuridae", "Indriidae", "Lemuridae",
+    "Daubentoniidae")
+Lorisoidea <- c("Lorisidae", "Galagidae")
+Strepsirhini <- list(Lemuroidea, Lorisoidea)
+names(Strepsirhini) <- list("Lemuroidea", "Lorisoidea")
+Strepsirhini
+#creates Strepsirhini branch
+Tarsioidea <- c("Tarsiidae")
+Catarrhini <- c("Cercopithecidae", "Hylobatidae", "Hominidae")
+Platyrrhini <- c("Cebidae", "Atelidae", "Pitheciidae")
+Anthropoidea <- list(Tarsioidea, Catarrhini, Platyrrhini)
+names(Anthropoidea) <- list("Tarsioidea", "Catarrhini", "Platyrrhini")
+#Creates Anthropoidea branch
+Haplorhini <- list(Anthropoidea)
+#Creates sublist of Anthropoidea
+names(Haplorhini) <- list("Anthropoidea")
+#WORKSHOP THIS--creates correct list name but adds Anthropoidea to all subsections of the list
+Primates <- c("Haplorini", "Strepsirhini")
+Primates <- list(Haplorhini, Strepsirhini)
+names(Primates) <- list("Haplorhini", "Strepsirhini")
+#WORKSHOP THIS--creates correct phylogency but repeats too many names
+m3 <- matrix(data = "3, 0, 1, 23, 1, 2, 33, 1, 1, 42, 0, 1, 41, 0, 2", nrow = 5, ncol = 3, byrow = FALSE)
+#5x3 matrix row wise
+df <- m3
+#Made matrix into a data frame
+is.logical(df[,2])
+#makes the column logical
+is.factor(df[,3])
+#makes column factor-valued
